@@ -6,7 +6,7 @@ public class googleTests {
 
     //Change the variable for different Google search results
     String searchTerm = "Lancelot";
-    String luckyButtonID = "gbqfbb";
+    String luckyButtonID = "RNmpXc";
     @Test
     public void searchGoogle(){
         utils.initializeOptions();
@@ -17,7 +17,9 @@ public class googleTests {
     @Test
     public void searchGoogleLucky(){
         utils.initializeOptions();
+        utils.maximizeCurr();
         utils.navigateGoogle();
+        utils.typeSearchBar(searchTerm);
         utils.tapButton(luckyButtonID);
     }
 }
